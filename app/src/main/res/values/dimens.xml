@@ -395,7 +395,9 @@
 
     <!--  自定义布局距离  -->
     <dimen name="dp_450">330dp</dimen>
+    <dimen name="dp_455">482dp</dimen>
     <dimen name="dp_460">490dp</dimen>
+    <dimen name="dp_520">582dp</dimen>
 
     <!-- 字体尺寸，你可以在任何地方添加-->
     <dimen name="sp_6">6sp</dimen>
