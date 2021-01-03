@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="#e0e0e0"
+        app:layout_constraintBottom_toTopOf="@id/eight_rlv_tv1" />
+
+    <TextView
+        android:id="@+id/eight_rlv_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="@dimen/dp_30"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/eight_rlv_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:text="什么是土星?"
+        android:textColor="#000000"
+        android:textSize="@dimen/dp_30"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/eight_rlv_tv1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/eight_rlv_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/up"
+        android:textSize="@dimen/dp_30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/eight_rlv_tv4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="asddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@id/eight_rlv_tv2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eight_rlv_tv2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
