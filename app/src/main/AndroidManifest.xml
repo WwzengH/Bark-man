@@ -10,11 +10,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.start.personal.PersonalActivity"/>
-        <activity android:name=".ui.start.regard.RegardActivity"/>
-        <activity android:name=".ui.start.setting.SetActivity"/>
-        <activity android:name=".ui.start.login.LoginActivity"/>
-        <activity android:name=".ui.start.StartActivity"/>
+        <activity android:name=".zmy.start.personal.PersonalActivity"/>
+        <activity android:name=".zmy.start.regard.RegardActivity"/>
+        <activity android:name=".zmy.start.setting.SetActivity"/>
+        <activity android:name=".zmy.start.login.LoginActivity"/>
+        <activity android:name=".zmy.start.StartActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

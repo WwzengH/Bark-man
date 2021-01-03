@@ -1,4 +1,4 @@
-package com.example.superman.ui.start.personal;
+package com.example.superman.zmy.start.personal;
 
 import android.os.Bundle;
 import android.view.View;

@@ -1,4 +1,4 @@
-package com.example.superman.ui.start.regard;
+package com.example.superman.zmy.start.regard;
 
 import android.graphics.Paint;
 import android.os.Bundle;

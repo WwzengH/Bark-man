@@ -1,4 +1,4 @@
-package com.example.superman.ui.start.login;
+package com.example.superman.zmy.start.login;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,7 +18,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import com.example.superman.R;
 import com.example.superman.base.BaseActivity;
 import com.example.superman.interfaces.IBasePresenter;
-import com.example.superman.ui.start.setting.SetActivity;
+import com.example.superman.zmy.start.setting.SetActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

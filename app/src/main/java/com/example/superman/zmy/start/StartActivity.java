@@ -1,4 +1,4 @@
-package com.example.superman.ui.start;
+package com.example.superman.zmy.start;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,11 +8,10 @@ import android.widget.TextView;
 
 import androidx.viewpager.widget.ViewPager;
 
-import com.example.superman.MainActivity;
 import com.example.superman.R;
 import com.example.superman.base.BaseActivity;
 import com.example.superman.interfaces.IBasePresenter;
-import com.example.superman.ui.start.login.LoginActivity;
+import com.example.superman.zmy.start.login.LoginActivity;
 
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;

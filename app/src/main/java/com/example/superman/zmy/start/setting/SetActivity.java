@@ -1,4 +1,4 @@
-package com.example.superman.ui.start.setting;
+package com.example.superman.zmy.start.setting;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,8 +10,8 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import com.example.superman.R;
 import com.example.superman.base.BaseActivity;
 import com.example.superman.interfaces.IBasePresenter;
-import com.example.superman.ui.start.personal.PersonalActivity;
-import com.example.superman.ui.start.regard.RegardActivity;
+import com.example.superman.zmy.start.personal.PersonalActivity;
+import com.example.superman.zmy.start.regard.RegardActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
