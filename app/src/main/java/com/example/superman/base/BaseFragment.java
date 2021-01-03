@@ -1,5 +1,6 @@
 package com.example.superman.base;
 
+
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
@@ -11,12 +12,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.superman.R;
 import com.example.superman.interfaces.IBasePresenter;
 import com.example.superman.interfaces.IBaseView;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
-
 
 public abstract class BaseFragment<P extends IBasePresenter> extends Fragment implements IBaseView {
 
@@ -24,20 +25,21 @@ public abstract class BaseFragment<P extends IBasePresenter> extends Fragment im
     Unbinder unbinder;
     protected Context mContext;
     protected Activity mActivity;
+    private View view1;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mContext = getContext();
         mActivity = getActivity();
+        view1 = View.inflate(mContext, getLayout(),null);
         int layout = getLayout();
         View view = null;
         if(layout <= 0){
             new RuntimeException("布局非法");
         }else{
-           view = inflater.inflate(layout,container,false);
+            view = inflater.inflate(layout,container,false);
         }
-
         return view;
     }
 
@@ -49,13 +51,13 @@ public abstract class BaseFragment<P extends IBasePresenter> extends Fragment im
         if(presenter != null){
             presenter.attachView(this);
         }
-        initView();
+        initView(view1);
         initData();
     }
 
     protected abstract int getLayout();
     protected abstract P createPrenter();
-    protected abstract void initView();
+    protected abstract void initView(View view);
     protected abstract  void initData();
 
     @Override
