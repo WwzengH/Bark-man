@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.LogisticsDetailActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D1D0D0"
+        android:id="@+id/log_cons1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/left2"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="物流详情"
+            android:textColor="#000"
+            android:textSize="15dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/log_cons2"
+    app:layout_constraintTop_toBottomOf="@id/log_cons1"
+    app:layout_constraintLeft_toLeftOf="parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订单编号:  23233123"
+        android:textColor="#000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/log_ddbh"/>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="快递单号:  23233123"
+        android:textColor="#000"
+        app:layout_constraintTop_toBottomOf="@id/log_ddbh"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/log_kddh"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="中通快递"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="15dp"
+        android:textColor="#000"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#CFCDCD"
+        app:layout_constraintTop_toBottomOf="@id/log_cons2"
+        android:layout_marginTop="10dp"
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/log_cons2">
+        <ImageView
+            android:id="@+id/long_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/show"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/log_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="[收获地址]北京市朝阳区朝阳大街"
+            app:layout_constraintLeft_toRightOf="@id/long_img"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:text="朝阳大厦2323-223"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/log_text1" />
+
+        <TextView
+            android:id="@+id/log_shu1"
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="70dp"
+            android:background="#BFBBBB"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/long_img" />
+
+        <TextView
+            android:id="@+id/log_qs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="已签收"
+            android:textColor="#000"
+            app:layout_constraintLeft_toRightOf="@id/log_shu1"
+            app:layout_constraintTop_toBottomOf="@id/text3" />
+
+        <TextView
+            android:id="@+id/log_ps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="配送中"
+            android:textColor="#000"
+            app:layout_constraintLeft_toRightOf="@id/log_shu1"
+            app:layout_constraintTop_toBottomOf="@id/text4" />
+
+        <TextView
+
+            android:id="@+id/log_xxx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="你的商品已在【上海分拨中心】完成扫描正在配送"
+            app:layout_constraintLeft_toRightOf="@id/log_shu1"
+            app:layout_constraintTop_toBottomOf="@id/text5" />
+
+
+        <TextView
+            android:id="@+id/x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="包裹已揽收,到达【上海静安物流中心】"
+            app:layout_constraintLeft_toRightOf="@id/log_shu1"
+            app:layout_constraintTop_toBottomOf="@id/log_lj" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:text="您提交了订单，请等待系统确认"
+            app:layout_constraintLeft_toRightOf="@id/log_shu1"
+            app:layout_constraintTop_toBottomOf="@id/x" />
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="10dp"
+            android:text="已安排送货,请你做好收获准备,快递小哥[崔朝明]123456"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/log_ps" />
+
+        <TextView
+            android:id="@+id/log_lj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="已揽件"
+            android:textColor="#000"
+            app:layout_constraintLeft_toRightOf="@id/log_shu1"
+            app:layout_constraintTop_toBottomOf="@id/log_xxx" />
+
+        <ImageView
+            android:id="@+id/log_yq"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="66dp"
+            android:src="@mipmap/yq"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/log_shu1" />
+
+
+
+        <TextView
+            android:id="@+id/log_time2222"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="30dp"
+            android:text="12:01"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/log_time1" />
+
+        <TextView
+            android:id="@+id/log_time11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="70dp"
+            android:text="02-02"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/log_time1" />
+
+        <TextView
+            android:id="@+id/log_time22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="12:01"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/log_time11" />
+
+
+        <TextView
+            android:id="@+id/log_time111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="70dp"
+            android:text="02-02"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/log_time11" />
+
+        <TextView
+            android:id="@+id/log_time222"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="12:01"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/log_time111" />
+
+
+        <TextView
+            android:id="@+id/log_time111111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="70dp"
+            android:text="02-02"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/log_time111" />
+
+        <TextView
+            android:id="@+id/log_time22222"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="12:01"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/log_time111111" />
+
+
+        <TextView
+            android:id="@+id/log_time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="70dp"
+            android:text="02-02"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="12:01"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/log_time11" />
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="10dp"
+            android:text="您的订单以签收,感谢您对HI优选的选择,欢迎下次光临"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/log_qs" />
+
+        <TextView
+            android:id="@+id/log_shu2"
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="70dp"
+            android:background="#BFBBBB"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/log_yq" />
+
+        <ImageView
+            android:id="@+id/log_yq3"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="66dp"
+            android:src="@mipmap/yq"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/log_shu3" />
+
+        <TextView
+            android:id="@+id/log_shu3"
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="70dp"
+            android:background="#BFBBBB"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/log_yq2" />
+
+        <ImageView
+            android:id="@+id/log_yq4"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="66dp"
+            android:src="@mipmap/yq"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/log_shu3" />
+
+        <TextView
+            android:id="@+id/log_shu4"
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="70dp"
+            android:background="#BFBBBB"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/log_yq3" />
+
+        <ImageView
+            android:id="@+id/log_yq5"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="66dp"
+            android:src="@mipmap/yq"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/log_shu4" />
+
+        <TextView
+            android:id="@+id/log_shu5"
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="70dp"
+            android:background="#BFBBBB"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/log_yq5" />
+
+        <ImageView
+            android:id="@+id/log_yq6"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="66dp"
+            android:src="@mipmap/yq"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/log_shu5" />
+
+        <TextView
+            android:id="@+id/log_shu6"
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="70dp"
+            android:background="#BFBBBB"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/log_yq6" />
+
+        <ImageView
+            android:id="@+id/log_yq2"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="66dp"
+            android:src="@mipmap/yq"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/log_shu2" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="66dp"
+            android:src="@mipmap/yq"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/log_shu6" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
