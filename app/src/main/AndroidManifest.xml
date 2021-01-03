@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.superman">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:name=".app.Myapp"
         android:allowBackup="true"
@@ -12,9 +10,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.EightActivity">
-        <activity android:name=".liuhaolin.wodejifen.JiFenActivity">
+        <activity android:name=".ui.Coursepayment2Activity"/>
 
+        <activity android:name=".ui.JobReviewActivity">
+
+
+
+        </activity>
+        <activity android:name=".ui.LogisticsDetailActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -39,6 +42,10 @@
         <activity android:name=".liuhaolin.shenfen.IdentityActivity" />
         <activity android:name=".liuhaolin.wodezuoye.Wode" />
         <activity android:name=".liuhaolin.wodekengcheng.MeKeCheng" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ui.MusicActivity" />
+        <activity android:name=".ui.OrderDetailActivity"></activity>
+        <activity android:name=".ui.MyOrderActivity" />
         <activity android:name=".MainActivity" />
     </application>
 
