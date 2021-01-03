@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/selector_pop"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/tv_title"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="服务协议和隐私政策"
+        android:gravity="center"
+        android:textSize="22dp"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        android:orientation="vertical"
+        android:id="@+id/linear_ll_one"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="欢迎您使用季风音乐在线教育服务，在使用季风音乐之前请您仔细阅读本用户协议。季风音乐感谢您的支持和信任!" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="欢迎使用季风音乐在线教育服务，xxxxxxxxx。季风音乐感谢您的支持和信任！欢迎使用季风音乐在线教育服务，xxxxxxxxx季风音乐感谢您的支持和信任！"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="您可以阅读"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="《用户协议和隐私政策》"
+                android:textColor="#37CEFB"
+                android:textSize="12dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="了解详细信息，如您同意，请点击“同意”开始接受我们的服务。"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+        <Button
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_ll_one"
+            android:layout_width="wrap_content"
+            android:text="不同意"
+            android:id="@+id/btn_no"
+            android:background="@drawable/selector_popo"
+            android:textColor="#FD7F1F"
+            android:textSize="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/btn_yes"
+        app:layout_constraintTop_toBottomOf="@+id/linear_ll_one"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="同意"
+        android:textSize="15dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/selector_redio"
+        android:layout_marginRight="30dp"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
