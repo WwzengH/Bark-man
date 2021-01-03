@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.superman">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".app.Myapp"
         android:allowBackup="true"
@@ -11,6 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ui.EightActivity">
+        <activity android:name=".liuhaolin.wodejifen.JiFenActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,6 +30,15 @@
         <activity android:name=".ui.ThreeActivity" />
         <activity android:name=".ui.TwoActivity" />
         <activity android:name=".ui.OneActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".liuhaolin.kefu.KeFuActivity" />
+        <activity android:name=".liuhaolin.youhuijuan.YouhuiJuanActivity">
+        </activity>
+        <activity android:name=".liuhaolin.yijian.YijianActivity" />
+        <activity android:name=".liuhaolin.xiaoxi.XiaoXiActivity" />
+        <activity android:name=".liuhaolin.shenfen.IdentityActivity" />
+        <activity android:name=".liuhaolin.wodezuoye.Wode" />
+        <activity android:name=".liuhaolin.wodekengcheng.MeKeCheng" />
         <activity android:name=".MainActivity" />
     </application>
 

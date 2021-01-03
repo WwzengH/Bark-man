@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Superman</string>
+    <string name="message">请选择真实的身份,\n身份一旦确认将无法更改,\n针对不同的身份,会有部分功能上的差异</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
