@@ -1,8 +1,4 @@
-package com.example.superman.ui;
-
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
+package com.example.superman.song;
 
 import com.example.superman.R;
 import com.example.superman.base.BaseActivity;

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F4F4F4"
-    tools:context=".ui.MusicActivity">
+    tools:context=".song.MusicActivity">
 
     <ImageView
         android:id="@+id/musti_img"

@@ -1,4 +1,4 @@
-package com.example.superman.ui;
+package com.example.superman.song;
 
 import android.os.Bundle;
 import android.widget.RelativeLayout;
@@ -9,11 +9,9 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.superman.R;
-import com.example.superman.ui.fragment.HomeFragMent;
-import com.example.superman.ui.fragment.KomeFragMent;
+import com.example.superman.song.fragment.HomeFragMent;
+import com.example.superman.song.fragment.KomeFragMent;
 import com.google.android.material.tabs.TabLayout;
-
-import java.sql.Time;
 
 public class MyOrderActivity extends AppCompatActivity {
 

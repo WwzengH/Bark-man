@@ -10,8 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.Coursepayment2Activity"/>
-        <activity android:name=".ui.Coursepayment1Activity">
+        <activity android:name=".song.Coursepayment2Activity"/>
+        <activity android:name=".song.Coursepayment1Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,21 +19,21 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.JobReviewActivity">
+        <activity android:name=".song.JobReviewActivity">
 
 
 
         </activity>
-        <activity android:name=".ui.LogisticsDetailActivity">
+        <activity android:name=".song.LogisticsDetailActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.MusicActivity" />
-        <activity android:name=".ui.OrderDetailActivity"></activity>
-        <activity android:name=".ui.MyOrderActivity" />
+        <activity android:name=".song.MusicActivity" />
+        <activity android:name=".song.OrderDetailActivity"></activity>
+        <activity android:name=".song.MyOrderActivity" />
         <activity android:name=".MainActivity" />
     </application>
 

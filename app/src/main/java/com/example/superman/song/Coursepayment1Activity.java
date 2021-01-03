@@ -1,4 +1,4 @@
-package com.example.superman.ui;
+package com.example.superman.song;
 
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
