@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
 	<dimen name="common_margin">@dimen/dp_15</dimen>
+	<dimen name="car_banner_height">@dimen/dp_200</dimen>
 	<dimen name="dp_m_60">-68.3333dp</dimen>
 	<dimen name="dp_m_30">-34.1667dp</dimen>
 	<dimen name="dp_m_20">-22.7778dp</dimen>
@@ -416,4 +417,5 @@
 	<dimen name="sp_40">45.5556sp</dimen>
 	<dimen name="sp_42">47.8333sp</dimen>
 	<dimen name="sp_48">54.6667sp</dimen>
+	<dimen name="_sp_50">-56.9444sp</dimen>
 </resources>

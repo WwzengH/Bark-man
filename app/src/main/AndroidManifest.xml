@@ -3,50 +3,26 @@
     package="com.example.superman">
 
     <application
-        android:name=".app.Myapp"
+       android:name=".app.Myapp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.Coursepayment2Activity"/>
-
-        <activity android:name=".ui.JobReviewActivity">
-
-
-
-        </activity>
-        <activity android:name=".ui.LogisticsDetailActivity">
+        <activity android:name=".ccm.Train"/>
+        <activity android:name=".ccm.CourseFigure"/>
+        <activity android:name=".ccm.CourseSelection"/>
+        <activity android:name=".ccm.User">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.SevenActivity">
+        <activity android:name=".MainActivity">
 
         </activity>
-        <activity android:name=".ui.SixActivity"></activity>
-        <activity android:name=".ui.FiveActivity" />
-        <activity android:name=".ui.FourActivity" />
-        <activity android:name=".ui.ThreeActivity" />
-        <activity android:name=".ui.TwoActivity" />
-        <activity android:name=".ui.OneActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".liuhaolin.kefu.KeFuActivity" />
-        <activity android:name=".liuhaolin.youhuijuan.YouhuiJuanActivity">
-        </activity>
-        <activity android:name=".liuhaolin.yijian.YijianActivity" />
-        <activity android:name=".liuhaolin.xiaoxi.XiaoXiActivity" />
-        <activity android:name=".liuhaolin.shenfen.IdentityActivity" />
-        <activity android:name=".liuhaolin.wodezuoye.Wode" />
-        <activity android:name=".liuhaolin.wodekengcheng.MeKeCheng" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".ui.MusicActivity" />
-        <activity android:name=".ui.OrderDetailActivity"></activity>
-        <activity android:name=".ui.MyOrderActivity" />
-        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

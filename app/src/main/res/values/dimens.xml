@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <!-- Your custom size defind by references, can be writted in anywhere, any module, any values/*.xml, for example: -->
     <dimen name="common_margin">@dimen/dp_15</dimen>
+    <dimen name="car_banner_height">@dimen/dp_200</dimen>
 
-    <!-- dp and sp values, must be defind in this file! -->
-    <!-- view size,you can add if there is no one -->
+    <!-- 布局尺寸，你能在任何地方添加 -->
     <dimen name="dp_m_60">-60dp</dimen>
     <dimen name="dp_m_30">-30dp</dimen>
     <dimen name="dp_m_20">-20dp</dimen>
@@ -393,7 +393,13 @@
     <dimen name="dp_640">640dp</dimen>
     <dimen name="dp_720">720dp</dimen>
 
-    <!-- font size,you can add if there is no one -->
+    <!--  自定义布局距离  -->
+    <dimen name="dp_450">330dp</dimen>
+    <dimen name="dp_455">482dp</dimen>
+    <dimen name="dp_460">490dp</dimen>
+    <dimen name="dp_520">582dp</dimen>
+
+    <!-- 字体尺寸，你可以在任何地方添加-->
     <dimen name="sp_6">6sp</dimen>
     <dimen name="sp_7">7sp</dimen>
     <dimen name="sp_8">8sp</dimen>
@@ -423,5 +429,5 @@
     <dimen name="sp_40">40sp</dimen>
     <dimen name="sp_42">42sp</dimen>
     <dimen name="sp_48">48sp</dimen>
-
+    <dimen name="_sp_50">-50sp</dimen>
 </resources>
