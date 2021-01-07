@@ -61,6 +61,8 @@ public class Coursepayment1Activity extends AppCompatActivity {
                 sp.setSpan(new StrikethroughSpan(), 0, price2.getText().toString().length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
                 price2.setText(sp);
                 popupWindow.showAtLocation(img, Gravity.BOTTOM, 0, 0);
+
+
             }
         });
     }
